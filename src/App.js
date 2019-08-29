@@ -1,26 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import ReactPdfCV from './ReactPDF/App';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+   state = {
+      to: true,
+   }
+
+   handleChange = () => {
+      this.setState(prevState =>
+         ({
+            to: !prevState.to,
+         })
+      )
+   }
+
+   render() {
+      return (
+         <>
+            <button onClick={this.handleChange}>zmien</button>
+            <div>
+               {this.state.to ? <div>CV w ReactDOM</div> : <ReactPdfCV />}
+            </div>
+         </>
+      )
+   }
 }
 
 export default App;
