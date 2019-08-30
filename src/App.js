@@ -1,15 +1,16 @@
 import React from 'react';
-import ReactPdfCV from './ReactPDF/App';
+import ReactDOMCV from './ReactDOM/ReactDomCV';
+import ReactPdfCV from './ReactPDF/ReactPdfCV';
 
 class App extends React.Component {
    state = {
-      to: true,
+      isDomCV: true,
    }
 
    handleChange = () => {
       this.setState(prevState =>
          ({
-            to: !prevState.to,
+            isDomCV: !prevState.isDomCV,
          })
       )
    }
@@ -19,7 +20,7 @@ class App extends React.Component {
          <>
             <button onClick={this.handleChange}>zmien</button>
             <div>
-               {this.state.to ? <div>CV w ReactDOM</div> : <ReactPdfCV />}
+               {this.state.isDomCV ? <ReactDOMCV /> : <ReactPdfCV/>}
             </div>
          </>
       )

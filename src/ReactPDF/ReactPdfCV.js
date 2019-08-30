@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
 
 // zmienic nazwe pliku
 const ReactPdfCV = () => (
-   <PDFViewer>
+   <PDFViewer width="100%">
       <Document>
          <Page size="A4" style={styles.page}>
             <View style={styles.section}>
