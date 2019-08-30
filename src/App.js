@@ -1,6 +1,43 @@
 import React from 'react';
+import styled from 'styled-components';
 import ReactDOMCV from './ReactDOM/ReactDomCV';
 import ReactPdfCV from './ReactPDF/ReactPdfCV';
+
+const AppContainer = styled.div`
+   position: relative;
+   margin-top: -50px;
+`;
+
+const CVContainer = styled.div`
+   display: flex;
+   justify-content: center;
+   background: #f5f5f5;
+`;
+
+const Button = styled.button`
+   position: sticky;
+   width: 120px;
+   height: 40px;
+   top: 10px;
+   margin-left: 20px;
+   background: none;
+   font-family: 'Montserrat';
+   color: #0fb7f2;
+   border: none;
+
+   &:hover {
+      cursor: pointer;
+      color: #0da8de
+   }
+
+   &:active {
+      color: #0a90bf
+   }
+
+   &:focus {
+      outline: none;
+   }
+`;
 
 class App extends React.Component {
    state = {
@@ -17,12 +54,12 @@ class App extends React.Component {
 
    render() {
       return (
-         <>
-            <button onClick={this.handleChange}>zmien</button>
-            <div>
+         <AppContainer>
+            <Button onClick={this.handleChange}>Zmień Render</Button>
+            <CVContainer>
                {this.state.isDomCV ? <ReactDOMCV /> : <ReactPdfCV/>}
-            </div>
-         </>
+            </CVContainer>
+         </AppContainer>
       )
    }
 }

@@ -14,7 +14,7 @@ export const BlockTitle = styled.h2`
    font-weight: 600;
    font-size: 20px;
    color: #0fb7f2;
-   width: 100px;
+   width: 160px;
    text-align: right;
    margin: 0;
 `;
@@ -22,7 +22,7 @@ export const BlockTitle = styled.h2`
 export const RowDate = styled.p`
    margin: 0;
    margin-right: 20px;
-   width: 100px;
+   width: 160px;
    text-align: right;
    font-size: 12px;
    line-height: 18px;

@@ -10,7 +10,7 @@ export const HeaderContainer = styled.div`
 
 export const PersonalDataWrapper = styled.div`
    display: flex;
-   width: 600px;
+   width: 530px;
    margin-left: 50px;
    padding-right: 20px;
    border-right: 1px solid #37373c;;
@@ -54,7 +54,7 @@ export const Introduction = styled.p`
 `;
 
 export const PersonalDetailsWrapper = styled.div`
-   flex-basis: 100%;
+   width: 400px;
    display: flex;
    align-items: center;
    justify-content: center;
@@ -69,11 +69,6 @@ export const Detail = styled.div`
 export const IconWrapper = styled.div`
    margin-right: 30px;
    margin-bottom: 15px;
-
-   img {
-      color: white;
-      fill: white;
-   }
 `;
 
 export const DetailText = styled.p`

@@ -1,13 +1,15 @@
 import React from 'react';
-import Header from './modules/Header/Header';
-import Section from './modules/Section/Section';
+import Header from './layouts/Header/Header';
+import MainPage from './layouts/MainPage/MainPage';
+import Footer from './layouts/Footer/Footer';
 import * as P from './parts';
 
 const ReactDomCV = () => {
    return (
       <P.DomCvWrapper>
          <Header />
-         <Section />
+         <MainPage />
+         <Footer />
       </P.DomCvWrapper>
    )
 }
