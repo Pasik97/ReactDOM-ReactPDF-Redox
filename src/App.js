@@ -5,20 +5,22 @@ import ReactPdfCV from './ReactPDF/ReactPdfCV';
 
 const AppContainer = styled.div`
    position: relative;
-   margin-top: -50px;
+   margin-top: -40px;
+   height: 100vh;
 `;
 
 const CVContainer = styled.div`
    display: flex;
    justify-content: center;
    background: #f5f5f5;
+   height: 100%;
 `;
 
 const Button = styled.button`
    position: sticky;
    width: 120px;
    height: 40px;
-   top: 10px;
+   top: 50px;
    margin-left: 20px;
    background: none;
    font-family: 'Montserrat';
@@ -57,7 +59,7 @@ class App extends React.Component {
          <AppContainer>
             <Button onClick={this.handleChange}>Zmień Render</Button>
             <CVContainer>
-               {this.state.isDomCV ? <ReactDOMCV /> : <ReactPdfCV/>}
+               {this.state.isDomCV ? <ReactPdfCV/>:<ReactDOMCV /> }
             </CVContainer>
          </AppContainer>
       )

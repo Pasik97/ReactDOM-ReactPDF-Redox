@@ -1,29 +1,16 @@
 import React from 'react';
-import { Page, Text, View, Document, StyleSheet, PDFViewer } from '@react-pdf/renderer';
+import { Page, Document, PDFViewer, Text, View} from '@react-pdf/renderer';
+import Header from './layouts/Header/Header';
+// import MainPage from './layouts/MainPage/MainPage';
+// import Footer from './layouts/Footer/Footer';
+import Contact from './modules/Contact/Contact';
+import * as S from './styles';
 
-const styles = StyleSheet.create({
-   page: {
-      flexDirection: 'row',
-      backgroundColor: '#E4E4E4'
-   },
-   section: {
-      margin: 10,
-      padding: 10,
-      flexGrow: 1
-   }
-});
-
-// zmienic nazwe pliku
 const ReactPdfCV = () => (
-   <PDFViewer width="100%">
+   <PDFViewer width="100%" >
       <Document>
-         <Page size="A4" style={styles.page}>
-            <View style={styles.section}>
-               <Text>Section #1</Text>
-            </View>
-            <View style={styles.section}>
-               <Text>Section #2</Text>
-            </View>
+         <Page size="A4" style={S.Page.page}>
+            <Contact />
          </Page>
       </Document>
    </PDFViewer>

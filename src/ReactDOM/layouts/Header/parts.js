@@ -13,7 +13,7 @@ export const PersonalDataWrapper = styled.div`
    width: 530px;
    margin-left: 50px;
    padding-right: 20px;
-   border-right: 1px solid #37373c;;
+   border-right: 1px solid #37373c;
 `;
 
 export const ImageWrapper = styled.div`
