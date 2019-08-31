@@ -59,7 +59,7 @@ class App extends React.Component {
          <AppContainer>
             <Button onClick={this.handleChange}>Zmień Render</Button>
             <CVContainer>
-               {this.state.isDomCV ? <ReactPdfCV/>:<ReactDOMCV /> }
+               {this.state.isDomCV ? <ReactDOMCV /> : <ReactPdfCV/>}
             </CVContainer>
          </AppContainer>
       )

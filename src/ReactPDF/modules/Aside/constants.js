@@ -18,22 +18,14 @@ export const blocksContent = [
             title: 'React',
             master: 6,
          },
-         {
-            title: 'Java',
-            master: 4,
-         },
       ]
    },
    {
-      title: "Umiejętności",
+      title: "Umiejetnosci",
       content: [
          {
-            title: 'Responsive Web Design',
+            title: 'RWD',
             master: 6,
-         },
-         {
-            title: 'Sieci Komputerowe',
-            master: 3,
          },
          {
             title: 'MS Office',
@@ -42,7 +34,7 @@ export const blocksContent = [
       ]
    },
    {
-      title: "Języki",
+      title: "Jezyki",
       content: [
          {
             title: 'Angielski',
@@ -57,27 +49,15 @@ export const blocksContent = [
 ];
 
 export const specialBlock = {
-   title: "Umiejętności osobowe",
+   title: "Umiejetnosci osobowe",
    content: [
       {
-         title: 'Współpraca',
+         title: 'Wspolpraca',
          master: 8,
       },
       {
          title: 'Organizacja',
          master: 7,
-      },
-      {
-         title: 'Punktualność',
-         master: 9,
-      },
-      {
-         title: 'Komunikatywność',
-         master: 7,
-      },
-      {
-         title: 'Kreatywność',
-         master: 5,
       },
    ]
 };

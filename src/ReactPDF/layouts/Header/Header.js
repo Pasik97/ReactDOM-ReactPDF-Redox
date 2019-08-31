@@ -49,7 +49,7 @@ const Header = () => {
                   <View style={S.IconWrapper.iconWrapper}>
                      <Image style={S.IconWrapper.image} src={location} />
                   </View>
-                  <Text style={S.Detail.detailText}>Kraków, os.Albertynskie 19/64</Text>
+                  <Text style={S.Detail.detailText}>Krakow, os.Albertynskie 19/64</Text>
                </View>
 
                <View style={S.Detail.detail}>

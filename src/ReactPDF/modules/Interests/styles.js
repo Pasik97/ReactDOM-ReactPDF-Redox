@@ -7,8 +7,9 @@ export const InterestsContainer = StyleSheet.create({
    },
    interestsTitle: {
       fontWeight: 600,
-      fontSize: 20,
+      fontSize: 16,
       margin: '0',
+      marginBottom: '5px',
    },
 });
 
@@ -24,9 +25,9 @@ export const ItemsWrapper = StyleSheet.create({
 export const InterestsItem = StyleSheet.create({
    interestsItem: {
       width: '60px',
-      height: '65px',
-      marginTop: '10px',
-      marginRight: '20px',
+      height: '60px',
+      marginTop: '5px',
+      marginRight: '10px',
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',

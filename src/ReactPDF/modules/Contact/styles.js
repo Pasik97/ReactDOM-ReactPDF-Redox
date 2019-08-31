@@ -7,9 +7,9 @@ export const ContactContainer = StyleSheet.create({
    },
    contactTitle: {
       fontWeight: 600,
-      fontSize: 20,
+      fontSize: 16,
       color: '#0fb7f2',
-      width: '120px',
+      width: '130px',
       textAlign: 'right',
       margin: '0',
       marginBottom: '10px',
@@ -21,7 +21,7 @@ export const ContactItem = StyleSheet.create({
       display: 'flex',
       flexDirection: 'row',
       marginBottom: '15px',
-      marginLeft: '140px',
+      marginLeft: '150px',
    },
    itemText: {
       margin: '0',

@@ -5,25 +5,25 @@ export const blocksContent = [
          {
             dateFrom: '2013',
             dateTo: '2016',
-            text: 'Liceum Ogólnokształcące I w Dębicy',
+            text: 'Liceum Ogólnoksztalcace I w Debicy',
             subtext: 'Profil matematyczno - informatyczno - fizyczny',
          },
          {
             dateFrom: '2017',
             dateTo: '?',
             text: 'Informatyka Stosowana',
-            subtext: 'Akademia Górniczo Hutnicza w Krakowie',
+            subtext: 'Akademia Gorniczo Hutnicza w Krakowie',
          },
       ]
    },
    {
-      title: "Doświadczenie",
+      title: "Doswiadczenie",
       content: [
          {
             dateFrom: '2019',
             dateTo: '?',
             text: 'Frontend Developer',
-            subtext: 'x-kom - staż',
+            subtext: 'x-kom - staz',
          },
          {
             dateFrom: '2019',
@@ -55,7 +55,7 @@ export const blocksContent = [
          {
             dateFrom: '2018',
             text: 'Oscyloskop',
-            subtext: 'Program symulujący pracę oscyloskopu',
+            subtext: 'Program symulujacy pracę oscyloskopu',
          },
       ]
    },

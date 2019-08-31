@@ -1,13 +1,8 @@
 import { StyleSheet } from '@react-pdf/renderer';
 
 export const AsideContainer = StyleSheet.create({
-   asideContainer: {},
-   blockTitle: {
-      fontWeight: 600,
-      fontSize: 20,
-      width: '140px',
-      textAlign: 'right',
-      margin: '0',
+   asideContainer: {
+      width: '200px',
    },
    normalBlocks: {
       backgroundColor: '#0fb7f2',

@@ -7,9 +7,9 @@ export const BlockContainer = StyleSheet.create({
    },
    blockTitle: {
       fontWeight: 600,
-      fontSize: 18,
+      fontSize: 16,
       color: '#0fb7f2',
-      width: '120px',
+      width: '130px',
       textAlign: 'right',
       margin: '0',
    }
@@ -24,7 +24,7 @@ export const BlockRow = StyleSheet.create({
    rowDate: {
       margin: '0',
       marginRight: '20px',
-      width: '120px',
+      width: '130px',
       textAlign: 'right',
       fontSize: 10,
    }

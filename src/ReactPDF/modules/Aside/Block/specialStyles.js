@@ -3,12 +3,13 @@ import { StyleSheet } from '@react-pdf/renderer';
 export const BlockContainer = StyleSheet.create({
    blockContainer: {
       color: '#0fb7f2',
-      padding: '20px',
+      padding: '10px',
+      paddingBottom: '0px',
    },
    blockTitle: {
       fontWeight: 600,
-      fontSize: 20,
-      width: '140px',
+      fontSize: 16,
+      width: '80px',
       textAlign: 'right',
       margin: '0',
    }
@@ -22,10 +23,10 @@ export const BlockRow = StyleSheet.create({
    },
    rowTitle: {
       margin: '0',
-      marginRight: '20px',
-      width: '140px',
+      marginRight: '10px',
+      width: '80px',
       textAlign: 'right',
-      fontSize: 12,
+      fontSize: 10,
    }
 });
 
@@ -40,28 +41,28 @@ export const RowDots = StyleSheet.create({
 export const Dot = StyleSheet.create({
    filledDot: {
       backgroundColor: '#0fb7f2',
-      height: '8px',
-      width: '8px',
+      height: '6px',
+      width: '6px',
       borderTopLeftRadius: 100,
       borderTopRightRadius: 100,
       borderBottomRightRadius: 100,
       borderBottomLeftRadius: 100,
       marginTop: '0',
       marginBottom: '0',
-      marginLeft: '2px',
-      marginRight: '2px',
+      marginLeft: '1px',
+      marginRight: '1px',
    },
    emptyDot: {
       backgroundColor: '#bababa',
-      height: '8px',
-      width: '8px',
+      height: '6px',
+      width: '6px',
       borderTopLeftRadius: 100,
       borderTopRightRadius: 100,
       borderBottomRightRadius: 100,
       borderBottomLeftRadius: 100,
       marginTop: '0',
       marginBottom: '0',
-      marginLeft: '2px',
-      marginRight: '2px',
+      marginLeft: '1px',
+      marginRight: '1px',
    }
 });

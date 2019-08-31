@@ -15,7 +15,7 @@ const Interests = () => {
          <View style={S.ItemsWrapper.itemsWrapper}>
 
             <View style={S.InterestsItem.interestsItem}>
-               <Text style={S.InterestsItem.itemText}>Piłka nożna</Text>
+               <Text style={S.InterestsItem.itemText}>Pilka nozna</Text>
                <View style={S.IconWrapper.iconWrapper}>
                   <Image style={S.IconWrapper.image} src={soccer} />
                </View>
