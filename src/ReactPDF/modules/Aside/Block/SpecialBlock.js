@@ -1,8 +1,8 @@
 import React from 'react';
 import { Text, View } from '@react-pdf/renderer';
-import * as S from './styles';
+import * as S from './specialStyles';
 
-const Block = ({title, data}) => {
+const SpecialBlock = ({title, data}) => {
    const rows = data.map(item => {
       let filledDots = [];
 
@@ -34,4 +34,4 @@ const Block = ({title, data}) => {
    )
 }
 
-export default Block;
+export default SpecialBlock;

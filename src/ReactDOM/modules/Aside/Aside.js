@@ -3,7 +3,7 @@ import * as P from './parts';
 import Block from './Block/Block';
 import { blocksContent, specialBlock } from './constants';
 
-const Section = () => {
+const Aside = () => {
    const blocks = blocksContent.map(item => <Block title={item.title} data={item.content} />);
 
    return (
@@ -14,4 +14,4 @@ const Section = () => {
    )
 }
 
-export default Section;
+export default Aside;

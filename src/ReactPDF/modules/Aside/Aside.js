@@ -1,17 +1,19 @@
 import React from 'react';
-import * as P from './parts';
+import { View } from '@react-pdf/renderer';
+import * as S from './styles';
 import Block from './Block/Block';
+import SpecialBlock from './Block/SpecialBlock'
 import { blocksContent, specialBlock } from './constants';
 
-const Section = () => {
+const Aside = () => {
    const blocks = blocksContent.map(item => <Block title={item.title} data={item.content} />);
 
    return (
-      <P.AsideContainer>
-         <P.NormalBlocks>{blocks}</P.NormalBlocks>
-         <P.SpecialBlock><Block title={specialBlock.title} data={specialBlock.content} special={true} /></P.SpecialBlock>
-      </P.AsideContainer>
+      <View style={S.AsideContainer.asideContainer}>
+         <View style={S.AsideContainer.normalBlocks}>{blocks}</View>
+         <View style={S.AsideContainer.specialBlocks}><SpecialBlock title={specialBlock.title} data={specialBlock.content} /></View>
+      </View>
    )
 }
 
-export default Section;
+export default Aside;

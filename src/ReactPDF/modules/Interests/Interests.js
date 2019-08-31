@@ -1,5 +1,6 @@
 import React from 'react';
-import * as P from './parts';
+import { Text, View, Image } from '@react-pdf/renderer';
+import * as S from './styles';
 import soccer from '../../../assets/Soccer.png';
 import technology from '../../../assets/Technology.png';
 import camera from '../../../assets/Camera.png';
@@ -9,54 +10,54 @@ import cube from '../../../assets/Rubiks_Cube.png';
 
 const Interests = () => {
    return (
-      <P.InterestsContainer>
-         <P.InterestsTitle>Zainteresowania</P.InterestsTitle>
-         <P.ItemsWrapper>
+      <View style={S.InterestsContainer.interestsContainer}>
+         <Text style={S.InterestsContainer.interestsTitle}>Zainteresowania</Text>
+         <View style={S.ItemsWrapper.itemsWrapper}>
 
-            <P.InterestsItem>
-               <P.ItemText>Piłka nożna</P.ItemText>
-               <P.IconWrapper>
-                  <img alt="soccer" src={soccer} width="14px" />
-               </P.IconWrapper>
-            </P.InterestsItem>
+            <View style={S.InterestsItem.interestsItem}>
+               <Text style={S.InterestsItem.itemText}>Piłka nożna</Text>
+               <View style={S.IconWrapper.iconWrapper}>
+                  <Image style={S.IconWrapper.image} src={soccer} />
+               </View>
+            </View>
 
-            <P.InterestsItem>
-               <P.ItemText>Nowe Technologie</P.ItemText>
-               <P.IconWrapper>
-                  <img alt="technology" src={technology} width="14px" />
-               </P.IconWrapper>
-            </P.InterestsItem>
+            <View style={S.InterestsItem.interestsItem}>
+               <Text style={S.InterestsItem.itemText}>Nowe Technologie</Text>
+               <View style={S.IconWrapper.iconWrapper}>
+                  <Image style={S.IconWrapper.image} src={technology} />
+               </View>
+            </View>
 
-            <P.InterestsItem>
-               <P.ItemText>Fotografia</P.ItemText>
-               <P.IconWrapper>
-                  <img alt="camera" src={camera} width="14px" />
-               </P.IconWrapper>
-            </P.InterestsItem>
+            <View style={S.InterestsItem.interestsItem}>
+               <Text style={S.InterestsItem.itemText}>Fotografia</Text>
+               <View style={S.IconWrapper.iconWrapper}>
+                  <Image style={S.IconWrapper.image} src={camera} />
+               </View>
+            </View>
 
-            <P.InterestsItem>
-               <P.ItemText>Muzyka</P.ItemText>
-               <P.IconWrapper>
-                  <img alt="music" src={music} width="14px" />
-               </P.IconWrapper>
-            </P.InterestsItem>
+            <View style={S.InterestsItem.interestsItem}>
+               <Text style={S.InterestsItem.itemText}>Muzyka</Text>
+               <View style={S.IconWrapper.iconWrapper}>
+                  <Image style={S.IconWrapper.image} src={music} />
+               </View>
+            </View>
 
-            <P.InterestsItem>
-               <P.ItemText>Moda</P.ItemText>
-               <P.IconWrapper>
-                  <img alt="shirt" src={shirt} width="14px" />
-               </P.IconWrapper>
-            </P.InterestsItem>
+            <View style={S.InterestsItem.interestsItem}>
+               <Text style={S.InterestsItem.itemText}>Moda</Text>
+               <View style={S.IconWrapper.iconWrapper}>
+                  <Image style={S.IconWrapper.image} src={shirt} />
+               </View>
+            </View>
 
-            <P.InterestsItem>
-               <P.ItemText>Kostka Rubika</P.ItemText>
-               <P.IconWrapper>
-                  <img alt="cube" src={cube} width="14px" />
-               </P.IconWrapper>
-            </P.InterestsItem>
+            <View style={S.InterestsItem.interestsItem}>
+               <Text style={S.InterestsItem.itemText}>Kostka Rubika</Text>
+               <View style={S.IconWrapper.iconWrapper}>
+                  <Image style={S.IconWrapper.image} src={cube} />
+               </View>
+            </View>
 
-         </P.ItemsWrapper>
-      </P.InterestsContainer>
+         </View>
+      </View>
    )
 }
 
