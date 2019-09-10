@@ -1,15 +1,15 @@
 import React from 'react';
 import * as P from './parts';
 import Block from './Block/Block';
-import { blocksContent, specialBlock } from './constants';
+import { skillsBlockContent, specialSkillBlock } from '../../../constants';
 
 const Aside = () => {
-   const blocks = blocksContent.map(item => <Block title={item.title} data={item.content} />);
+   const blocks = skillsBlockContent.map(item => <Block title={item.title} data={item.content} />);
 
    return (
       <P.AsideContainer>
          <P.NormalBlocks>{blocks}</P.NormalBlocks>
-         <P.SpecialBlock><Block title={specialBlock.title} data={specialBlock.content} special={true} /></P.SpecialBlock>
+         <P.SpecialBlock><Block title={specialSkillBlock.title} data={specialSkillBlock.content} special={true} /></P.SpecialBlock>
       </P.AsideContainer>
    )
 }

@@ -1,31 +1,34 @@
 import React from 'react';
 import * as P from './parts';
-import example from '../../../assets/example.jpg';
-import person from '../../../assets/Person.png';
-import instagram from '../../../assets/Instagram.png';
-import location from '../../../assets/Location.png';
-import behance from '../../../assets/Behance.png';
+import { header } from '../../../constants';
 
 const Header = () => {
+   const details = header.items.map(item => (
+      <P.Detail>
+         <P.IconWrapper>
+            <img alt={item.text} src={item.img} width="14px" />
+         </P.IconWrapper>
+         <P.DetailText>{item.text}</P.DetailText>
+      </P.Detail>
+   ));
+
    return (
       <P.HeaderContainer>
 
          <P.PersonalDataWrapper>
             <P.ImageWrapper>
-               <img alt="Konrad Pasik" src={example} /> 
+               <img alt="Konrad Pasik" src={header.headerImg} /> 
             </P.ImageWrapper>
 
             <P.InfoWrapper>
 
                <P.NameWrapper>
-                  <P.Name>Konrad Pasik</P.Name>
-                  <P.Profession>FrontEnd Developer</P.Profession>
+                  <P.Name>{header.name}</P.Name>
+                  <P.Profession>{header.profession}</P.Profession>
                </P.NameWrapper>
 
                <P.Introduction>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
-                  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
-                  commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                  {header.introduction}
                </P.Introduction>
 
             </P.InfoWrapper>
@@ -34,35 +37,7 @@ const Header = () => {
 
          <P.PersonalDetailsWrapper>
             <P.DetailsWrapper>
-
-               <P.Detail>
-                  <P.IconWrapper>
-                     <img alt="person" src={person} width="14px" />
-                  </P.IconWrapper>
-                  <P.DetailText>31.01.1997</P.DetailText>
-               </P.Detail>
-
-               <P.Detail>
-                  <P.IconWrapper>
-                     <img alt="location" src={location} width="14px" />
-                  </P.IconWrapper>
-                  <P.DetailText>Kraków, os. Albertyńskie 19/64</P.DetailText>
-               </P.Detail>
-
-               <P.Detail>
-                  <P.IconWrapper>
-                     <img alt="behance" src={behance} width="14px" />
-                  </P.IconWrapper>
-                  <P.DetailText>/lorem</P.DetailText>
-               </P.Detail>
-
-               <P.Detail>
-                  <P.IconWrapper>
-                     <img alt="instagram" src={instagram} width="14px" />
-                  </P.IconWrapper>
-                  <P.DetailText>/ipsum</P.DetailText>
-               </P.Detail>
-
+               {details}
             </P.DetailsWrapper>
          </P.PersonalDetailsWrapper>
 

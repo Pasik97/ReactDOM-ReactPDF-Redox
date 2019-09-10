@@ -24,10 +24,9 @@ export const ContactItem = styled.div`
 export const IconWrapper = styled.div`
    margin-right: 15px;
    width: 14px;
-   ${({ facebook }) => facebook && `
-      display: flex;
-      justify-content: center;
-   `}
+   align-items: center;
+   justify-content: center;
+   display: flex;
 `;
 
 export const ItemText = styled.p`
