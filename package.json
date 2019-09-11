@@ -14,7 +14,7 @@
     "styled-components": "^4.3.2"
   },
   "scripts": {
-    "example": "babel-node ./src/Redox/Docs.js",
+    "example": "babel-node ./src/SimpleCV/Redox/Docs.js",
     "start": "npm run example & react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

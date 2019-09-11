@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import ReactDOMCV from './ReactDOM/ReactDomCV';
-import ReactPdfCV from './ReactPDF/ReactPdfCV';
+import ReactDOMCV from './DesignedCV/ReactDOM/ReactDomCV';
+import ReactPdfCV from './DesignedCV/ReactPDF/ReactPdfCV';
+import { Page, Document, PDFViewer, Text } from '@react-pdf/renderer';
 
 const AppContainer = styled.div`
    position: relative;
@@ -16,12 +17,17 @@ const CVContainer = styled.div`
    min-height: 100%;
 `;
 
-const Button = styled.button`
+const ButtonsContainer = styled.div`
    position: sticky;
    width: 120px;
    height: 40px;
    top: 50px;
    margin-left: 20px;
+`;
+
+const Button = styled.button`
+   width: 100%;
+   height: 40px;
    background: none;
    font-family: 'Montserrat';
    color: #0fb7f2;
@@ -41,12 +47,23 @@ const Button = styled.button`
    }
 `;
 
+const ReactPdfCV2 = () => (
+   <PDFViewer width="100%">
+      <Document>
+         <Page size="A4">
+            <Text>prosteCVwPDF</Text>
+         </Page>
+      </Document>
+   </PDFViewer>
+);
+
 class App extends React.Component {
    state = {
       isDomCV: true,
+      simpleCV: false,
    }
 
-   handleChange = () => {
+   handleChangeRender = () => {
       this.setState(prevState =>
          ({
             isDomCV: !prevState.isDomCV,
@@ -54,12 +71,23 @@ class App extends React.Component {
       )
    }
 
+   handleChangeCV = () => {
+      this.setState(prevState =>
+         ({
+            simpleCV: !prevState.simpleCV,
+         })
+      )
+   }
+
    render() {
       return (
          <AppContainer>
-            <Button onClick={this.handleChange}>Zmień Render</Button>
+            <ButtonsContainer>
+               <Button onClick={this.handleChangeRender}>Zmień Render</Button>
+               <Button onClick={this.handleChangeCV}>Zmień CV</Button>
+            </ButtonsContainer>
             <CVContainer>
-               {this.state.isDomCV ? <ReactDOMCV /> : <ReactPdfCV/>}
+               {this.state.simpleCV ? (this.state.isDomCV ? `prosteCVwDOMie` : <ReactPdfCV2/>) : (this.state.isDomCV ? <ReactDOMCV /> : <ReactPdfCV/>)}
             </CVContainer>
          </AppContainer>
       )
