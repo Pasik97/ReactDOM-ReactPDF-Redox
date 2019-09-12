@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, Document, LineBreak } from 'redocx';
+import { render, Document } from 'redocx';
 import CVHeader from './layouts/Header/Header';
 import Details from './layouts/Details/Details';
 import Skills from './layouts/Skills/Skills';

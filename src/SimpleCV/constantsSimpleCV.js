@@ -2,7 +2,6 @@ export const klauzulaCV = 'Wyrażam zgodę na przetwarzanie moich danych osobowy
 
 export const header = {
    name: 'Konrad Pasik',
-   profession: 'FrontEnd Developer',
    info: [ 'FrontEnd Developer', '31.01.1997', 'Kraków, os. Albertyńskie 19/64'],
 }
 
@@ -139,33 +138,3 @@ export const contact = {
    title: 'Kontakt',
    items: [ '+(48) 517 532 850', 'k.pasik97@gmail.com', 'facebook.com/Pasik97'],
 }
-
-// export const interests = {
-//    title: 'Zainteresowania',
-//    items: [
-//       {
-//          title: 'Piłka nożna',
-//          img: soccer,
-//       },
-//       {
-//          title: 'Nowe Technologie',
-//          img: technology,
-//       },
-//       {
-//          title: 'Fotografia',
-//          img: camera,
-//       },
-//       {
-//          title: 'Muzyka',
-//          img: music,
-//       },
-//       {
-//          title: 'Moda',
-//          img: shirt,
-//       },
-//       {
-//          title: 'Kostka Rubika',
-//          img: cube,
-//       },
-//    ],
-// }
