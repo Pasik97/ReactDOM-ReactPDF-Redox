@@ -5,7 +5,7 @@ const Details = ({title, content}) => {
    const detail = content.map(item => (
       <P.Detail>
          <P.DateWrapper>
-            {`${item.dateFrom} - ${item.dateTo}`}
+            {`${item.dateFrom} ${item.dateTo && `- ${item.dateTo}`}`}
          </P.DateWrapper>
             {`${item.text} (${item.subtext})`}
       </P.Detail>

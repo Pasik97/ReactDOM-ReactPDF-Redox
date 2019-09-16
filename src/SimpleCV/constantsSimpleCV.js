@@ -51,16 +51,19 @@ export const detailsBlocksContent = [
       content: [
          {
             dateFrom: '2019',
+            dateTo: '',
             text: 'ChampionsLeague',
             subtext: 'Strona do sprawdzania wyniku Ligi Mistrzów',
          },
          {
             dateFrom: '2019',
+            dateTo: '',
             text: 'DESVN',
             subtext: 'Stworzenie strony desvn.pl',
          },
          {
             dateFrom: '2018',
+            dateTo: '',
             text: 'Oscyloskop',
             subtext: 'Program symulujący pracę oscyloskopu',
          },

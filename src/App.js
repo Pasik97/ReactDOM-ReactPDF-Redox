@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import ReactDOMCV from './DesignedCV/ReactDOM/ReactDomCV';
 import ReactPdfCV from './DesignedCV/ReactPDF/ReactPdfCV';
 import ReactDOMSimpleCV from './SimpleCV/ReactDOM/ReactDomSimpleCV';
-import { Page, Document, PDFViewer, Text } from '@react-pdf/renderer';
+import ReactPDFSimpleCV from './SimpleCV/ReactPDF/ReactPdfSimpleCV';
 
 const AppContainer = styled.div`
    position: relative;
@@ -48,16 +48,6 @@ const Button = styled.button`
    }
 `;
 
-const ReactPdfCV2 = () => (
-   <PDFViewer width="100%">
-      <Document>
-         <Page size="A4">
-            <Text>prosteCVwPDF</Text>
-         </Page>
-      </Document>
-   </PDFViewer>
-);
-
 class App extends React.Component {
    state = {
       isDomCV: true,
@@ -88,7 +78,7 @@ class App extends React.Component {
                <Button onClick={this.handleChangeCV}>Zmień CV</Button>
             </ButtonsContainer>
             <CVContainer>
-               {this.state.simpleCV ? (this.state.isDomCV ? <ReactDOMSimpleCV /> : <ReactPdfCV2/>) : (this.state.isDomCV ? <ReactDOMCV /> : <ReactPdfCV/>)}
+               {this.state.simpleCV ? (this.state.isDomCV ? <ReactDOMSimpleCV /> : <ReactPDFSimpleCV />) : (this.state.isDomCV ? <ReactDOMCV /> : <ReactPdfCV/>)}
             </CVContainer>
          </AppContainer>
       )

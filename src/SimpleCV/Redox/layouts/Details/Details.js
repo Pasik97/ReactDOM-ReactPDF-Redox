@@ -1,12 +1,14 @@
 import React from 'react';
-import { Text, LineBreak, Document } from 'redocx';
+import { Text, LineBreak } from 'redocx';
 import { detailsBlocksContent } from '../../../constantsSimpleCV';
 
 const Details = () => {
-   const details = detailsBlocksContent.map(item => {
-      const mappedContent = item.content.map(section => (
-         `${section.dateFrom} - ${section.dateTo}     ${section.text} (${section.subtext})`
-      ));
+   const details = detailsBlocksContent.map((item, index) => {
+      const mappedContent = item.content.map(section => {
+         if (index == detailsBlocksContent.length - 1)
+            return `${section.dateFrom}  ${section.text} (${section.subtext})`;
+         return `${section.dateFrom} - ${section.dateTo}     ${section.text} (${section.subtext})`;
+      });
       const result = [
          item.title,
          <LineBreak />,
