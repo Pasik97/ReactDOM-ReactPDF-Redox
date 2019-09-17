@@ -4,7 +4,7 @@ import * as S from './specialStyles';
 
 const SpecialBlock = ({title, data}) => {
    const rows = data.map((item, index) => {
-      if(index < 2){
+      if(true){
          let filledDots = [];
 
          for(let i=0; i < 10; i++){
@@ -29,7 +29,7 @@ const SpecialBlock = ({title, data}) => {
    return (
       <View style={S.BlockContainer.blockContainer}>
          <View style={S.BlockRow.blockRow}>
-            <Text style={S.BlockContainer.blockTitle}>{title.slice(0,12)}</Text>
+            <Text style={S.BlockContainer.blockTitle}>{title}</Text>
          </View>
          {rows}
 

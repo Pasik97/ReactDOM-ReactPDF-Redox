@@ -8,7 +8,7 @@ const Contact = () => {
          return (
             <P.ContactItem>
                <P.IconWrapper>
-                  <img style={{width: "auto !important"}} alt={item.content} src={item.img} height="14px"/>
+                  <img style={{width: "auto !important"}} alt={item.content} src={item.img} height="8px"/>
                </P.IconWrapper>
                <P.ItemText>
                   {item.content}
@@ -19,7 +19,7 @@ const Contact = () => {
          return (
             <P.ContactItem>
                <P.IconWrapper>
-                  <img alt={item.content} src={item.img} width="14px" />
+                  <img alt={item.content} src={item.img} width="8px" />
                </P.IconWrapper>
                <P.ItemText>
                   {item.content}

@@ -3,13 +3,13 @@ import { StyleSheet } from '@react-pdf/renderer';
 export const BlockContainer = StyleSheet.create({
    blockContainer: {
       color: '#0fb7f2',
-      padding: '10px',
-      paddingBottom: '0px',
+      padding: '12px',
+      paddingBottom: '12px',
    },
    blockTitle: {
       fontWeight: 600,
-      fontSize: 16,
-      width: '80px',
+      fontSize: 13,
+      width: '82px',
       textAlign: 'right',
       margin: '0',
    }
@@ -19,14 +19,14 @@ export const BlockRow = StyleSheet.create({
    blockRow: {
       display: 'flex',
       flexDirection: 'row',
-      marginBottom: '10px',
+      marginBottom: '7px',
    },
    rowTitle: {
       margin: '0',
-      marginRight: '10px',
-      width: '80px',
+      marginRight: '12px',
+      width: '88px',
       textAlign: 'right',
-      fontSize: 10,
+      fontSize: 8,
    }
 });
 
@@ -41,8 +41,8 @@ export const RowDots = StyleSheet.create({
 export const Dot = StyleSheet.create({
    filledDot: {
       backgroundColor: '#0fb7f2',
-      height: '6px',
-      width: '6px',
+      height: '5px',
+      width: '5px',
       borderTopLeftRadius: 100,
       borderTopRightRadius: 100,
       borderBottomRightRadius: 100,
@@ -54,8 +54,8 @@ export const Dot = StyleSheet.create({
    },
    emptyDot: {
       backgroundColor: '#bababa',
-      height: '6px',
-      width: '6px',
+      height: '5px',
+      width: '5px',
       borderTopLeftRadius: 100,
       borderTopRightRadius: 100,
       borderBottomRightRadius: 100,

@@ -10,15 +10,15 @@ export const ColumnsWrapper = StyleSheet.create({
       flexDirection: 'row',
    },
    leftColumn: {
-      width: '350px',
-      marginTop: '30px',
-      marginBottom: '20px',
-      marginLeft: '10px',
+      width: '306px',
+      marginTop: '32px',
+      marginBottom: '19px',
+      marginLeft: '47px',
    },
    rightColumn: {
-      width: '250px',
-      marginTop: '30px',
-      marginBottom: '20px',
-      marginLeft: '20px',
+      width: '188px',
+      marginTop: '32px',
+      marginBottom: '19px',
+      marginRight: '47px',
    },
 });

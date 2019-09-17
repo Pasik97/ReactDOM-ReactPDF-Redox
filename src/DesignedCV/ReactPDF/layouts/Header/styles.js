@@ -3,7 +3,7 @@ import background from '../../../assets/background.png';
 
 export const HeaderContainer = StyleSheet.create({
    headerContainer: {
-      height: '250px',
+      height: '205px',
       width: '100%',
       backgroundColor: 'black',
       backgroundImage: `url(${background})`,
@@ -30,10 +30,10 @@ export const PersonalDataWrapper = StyleSheet.create({
    personalDataWrapper: {
       display: 'flex',
       flexDirection: 'row',
-      width: '350px',
+      width: '310px',
       height: '100%',
       marginLeft: '30px',
-      paddingRight: '20px',
+      paddingRight: '12px',
       borderRightColor: '#37373c',
       borderRightStyle: 'solid', 
       borderRightWidth: 1,
@@ -47,8 +47,8 @@ export const ImageWrapper = StyleSheet.create({
       justifyContent: 'center',
    },
    image: {
-      width: '120px',
-      height: '120px',
+      width: '95px',
+      height: '95px',
       borderTopColor: 'white',
       borderTopStyle: 'solid',
       borderTopWidth: 2,
@@ -74,7 +74,7 @@ export const InfoWrapper = StyleSheet.create({
       flexDirection: 'column',
       // width: '400px',
       height: '100%',
-      marginLeft: '25px',
+      marginLeft: '14px',
       justifyContent: 'center',
       zIndex: '1',
    },
@@ -82,30 +82,30 @@ export const InfoWrapper = StyleSheet.create({
 
 export const NameWrapper = StyleSheet.create({
    nameWrapper: {
-      marginBottom: '20px',
+      marginBottom: '10px',
    },
    name: {
       fontWeight: 600,
-      fontSize: 20,
+      fontSize: 14,
       margin: '0',
    },
    profession: {
       color: '#0fb7f2',
-      fontSize: 10,
+      fontSize: 9,
       margin: '0',
    }
 });
 
 export const Introduction = StyleSheet.create({
    introduction: {
-      fontSize: 10,
-      width: '180px',
+      fontSize: 9,
+      width: '170px',
    },
 });
 
 export const PersonalDetailsWrapper = StyleSheet.create({
    personalDetailsWrapper: {
-      width: '250px',
+      width: '235px',
       display: 'flex',
       justifyContent: 'center',
    },
@@ -121,19 +121,19 @@ export const Detail = StyleSheet.create({
    detail: {
       display: 'flex',
       flexDirection: 'row',
-      marginBottom: '15px',
+      marginBottom: '10px',
    },
    detailText: {
       margin: '0',
       width: '100px',
-      fontSize: 12,
+      fontSize: 9,
       fontWeight: 600,
    },
 });
 
 export const IconWrapper = StyleSheet.create({
    iconWrapper: {
-      marginRight: '20px',
+      marginRight: '17px',
       display: 'flex',
       justifyContent: 'center',
    },

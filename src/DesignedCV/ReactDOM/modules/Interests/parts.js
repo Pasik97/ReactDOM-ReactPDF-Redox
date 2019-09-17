@@ -20,7 +20,7 @@ export const ItemsWrapper = styled.div`
 export const InterestsItem = styled.div`
    width: 60px;
    height: 65px;
-   margin: 10px 20px 0 20px;;
+   margin: 10px 20px 0 20px;
    display: flex;
    flex-direction: column;
    align-items: center;

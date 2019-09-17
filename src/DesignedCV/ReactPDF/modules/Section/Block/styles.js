@@ -2,14 +2,15 @@ import { StyleSheet } from '@react-pdf/renderer';
 
 export const BlockContainer = StyleSheet.create({
    blockContainer: {
-      fontSize: 12,
+      fontSize: 9,
       color: '#7a7a7a',
+      marginBottom: '20px',
    },
    blockTitle: {
       fontWeight: 600,
-      fontSize: 16,
+      fontSize: 13,
       color: '#0fb7f2',
-      width: '130px',
+      width: '94px',
       textAlign: 'right',
       margin: '0',
    }
@@ -23,8 +24,8 @@ export const BlockRow = StyleSheet.create({
    },
    rowDate: {
       margin: '0',
-      marginRight: '20px',
-      width: '130px',
+      marginRight: '12px',
+      width: '94px',
       textAlign: 'right',
       fontSize: 10,
    }

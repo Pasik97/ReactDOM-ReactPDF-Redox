@@ -2,21 +2,22 @@ import { StyleSheet } from '@react-pdf/renderer';
 
 export const InterestsContainer = StyleSheet.create({
    interestsContainer: {
-      fontSize: 10,
+      fontSize: 8,
       color: '#0fb7f2',
    },
    interestsTitle: {
       fontWeight: 600,
-      fontSize: 16,
+      fontSize: 13,
       margin: '0',
-      marginBottom: '5px',
+      marginBottom: '16px',
    },
 });
 
 export const ItemsWrapper = StyleSheet.create({
    itemsWrapper: {
-      maxWidth: '300px',
+      maxWidth: '176px',
       display: 'flex',
+      justifyContent: 'space-around',
       flexDirection: 'row',
       flexWrap: 'wrap',
    },
@@ -24,17 +25,17 @@ export const ItemsWrapper = StyleSheet.create({
 
 export const InterestsItem = StyleSheet.create({
    interestsItem: {
-      width: '60px',
-      height: '60px',
-      marginTop: '5px',
-      marginRight: '10px',
+      width: '35px',
+      height: '42px',
+      marginTop: '6px',
+      marginRight: '12px',
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',
       justifyContent: 'flex-end',
    },
    itemText: {
-      width: '60px',
+      width: '35px',
       margin: '0',
       textAlign: 'center',
       fontWeight: 600,
@@ -47,8 +48,8 @@ export const IconWrapper = StyleSheet.create({
       alignItems: 'center',
       justifyContent: 'center',
       backgroundColor: '#f5f5f5',
-      width: '30px',
-      height: '30px',
+      width: '26px',
+      height: '26px',
       borderTopColor: '#0fb7f2',
       borderTopStyle: 'solid',
       borderTopWidth: 2,
@@ -68,7 +69,7 @@ export const IconWrapper = StyleSheet.create({
       marginTop: '5px',
    },
    image: {
-      width: '14px',
+      width: '12px',
    },
 });
 
